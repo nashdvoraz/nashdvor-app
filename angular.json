@@ -37,7 +37,7 @@
           "configurations": {
             "development": {
               "buildTarget": "my-app:build:development",
-              "hmr": true
+              "hmr": false
             },
             "production": {
               "buildTarget": "my-app:build:production"
@@ -49,5 +49,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "706a6841-9a9a-4bb4-8b77-7dc5582d6dfe"
   }
 }
