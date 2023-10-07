@@ -1,8 +1,10 @@
 import { Component } from '@angular/core';
+import { MatButtonModule } from '@angular/material/button';
 
 @Component({
   selector: 'app-home',
   standalone: true,
+  imports: [MatButtonModule],
   template: `
     <div>
       <a href="https://analogjs.org/" target="_blank">
@@ -15,7 +17,14 @@ import { Component } from '@angular/core';
     <h3>The fullstack meta-framework for Angular!</h3>
 
     <div class="card">
-      <button type="button" (click)="increment()">Count {{ count }}</button>
+      <button
+        type="button"
+        (click)="increment()"
+        mat-raised-button
+        color="primary"
+      >
+        Count {{ count }}
+      </button>
     </div>
 
     <p class="read-the-docs">
